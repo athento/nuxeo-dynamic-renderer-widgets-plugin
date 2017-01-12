@@ -14,9 +14,9 @@
 				<h:selectBooleanCheckbox value="#{field_0}" id="#{widget.id}_select"
 					required="#{widget.properties['required']}">
 					<f:ajax event="change" execute="@this"
-						render="nxw_documentTabs_tab_content"
+						render="document_create nxw_documentTabs_tab_content"
 						onevent="function(data) { if (data.status === 'success') { 
-						console.log('View has been refreshed id: nxw_documentTabs_tab_content');
+						console.log('View has been refreshed id: document_create nxw_documentTabs_tab_content');
 						 } }">
 					</f:ajax>
 				</h:selectBooleanCheckbox>
